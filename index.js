@@ -30,7 +30,7 @@ function getQuote() {
             `        <p>${quoteText}</p>`,
             `    </blockquote>`,
             `    <figcaption class="blockquote-footer">`,
-            `            ${author}`,
+            `            ${quoteAuthor}`,
             `    </figcaption>`,
             `</figure>`
         ].join("")
