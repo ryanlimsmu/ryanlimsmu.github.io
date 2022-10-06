@@ -1,4 +1,5 @@
 function createAlert() {
+
     let liveAlertsArea = document.getElementById("liveAlerts");
     let alertWrapper = document.createElement("div");
     alertWrapper.innerHTML = [
@@ -9,4 +10,33 @@ function createAlert() {
     ].join("")
 
     liveAlertsArea.append(alertWrapper)
+
+}
+
+function getQuote() {
+
+    let api_endpoint_url = "https://api.quotable.io/random";
+
+    axios.get(api_endpoint_url)
+    .then(response => {
+        let apiOutput = response.data;
+        let quoteArea = document.getElementById("quoteBox");
+        let quoteText = apiOutput.content;
+        let quoteAuthor = apiOutput.author;
+
+        quoteArea.innerHTML = [
+            `<figure>`,
+            `    <blockquote class="blockquote">`,
+            `        <p>${quoteText}</p>`,
+            `    </blockquote>`,
+            `    <figcaption class="blockquote-footer">`,
+            `            ${author}`,
+            `    </figcaption>`,
+            `</figure>`
+        ].join("")
+    })
+    .catch(error =>{
+        console.log(error.message);
+    })
+
 }
