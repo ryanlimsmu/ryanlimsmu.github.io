@@ -82,13 +82,25 @@
                         Have a random table too:<br>
                     </p>
                     <table class="table-info table-striped-columns table-hover table-bordered">
-                        <tr>
-                            <td rowspan="2">Tall Box!</td>
-                            <td colspan="2">w i d e box</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">Tall Box V2!!!</td>
-                        </tr>
+                        <thead>
+                            <tr>
+                                <th scope="col">Column 1</th>
+                                <th scope="col">Column 2</th>
+                                <th scope="col">Column 3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Row 1</th>
+                                <td rowspan="2">Tall Box!</td>
+                                <td colspan="2">w i d e box</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Row 2</th>
+                                <td>Normal Cell</td>
+                                <td>Normal Cell</td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
                 <div class="col-lg-5 p-0 overflow-hidden shadow-lg">
