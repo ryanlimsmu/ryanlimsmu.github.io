@@ -121,11 +121,11 @@
 
         <!-- Form -->
         <div class="container my-5 rounded-3 content-box" id="form">
-            <div class="row p-4 pt-lg-5 align-items-center rounded-3 border shadow-lg text-center">
+            <div class="row p-4 pt-lg-5 align-items-center rounded-3 border shadow-lg">
                 <form action="">
                     <!-- Form Header Text -->
-                    <h3>It's Your Turn. What's Up?</h3>
-                    <h4 class="mb-3 fw-normal fst-italic">Go on, fill in the form!</h4>
+                    <h3 class="text-center">It's Your Turn. What's Up?</h3>
+                    <h4 class="mb-3 fw-normal fst-italic text-center">Go on, fill in the form!</h4>
 
                     <!-- Name Input Box -->
                     <div class="form-floating mb-1">
@@ -134,11 +134,48 @@
                     </div>
 
                     <!-- Email Input Box -->
-                    <div class="form-floating mb-1">
+                    <div class="form-floating mb-3">
                         <input type="email" class="form-control" id="Email" placeholder="name@example.com" aria-describedby="emailHelp" />
                         <label for="Email">Email Address</label>
                         <div id="emailHelp" class="form-text">Your email will be kept private... because this form doesn't link to anywhere.</div>
                     </div>
+
+                    <!-- Relationship Status Radio Buttons -->
+                    <p class="lead">Relationship Status:</p>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="relationshipStatus" id="relationshipSingle" checked>
+                        <label for="relationshipSingle" class="form-check-label">
+                            Single
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="relationshipStatus" id="relationshipDating">
+                        <label for="relationshipDating" class="form-check-label">
+                            Currently dating
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="relationshipStatus" id="relationshipMarried">
+                        <label for="relationshipMarried" class="form-check-label">
+                            Married
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="relationshipStatus" id="relationshipUnmarried">
+                        <label for="relationshipUnmarried" class="form-check-label">
+                            Previously Married
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="relationshipStatus" id="relationshipSolo">
+                        <label for="relationshipSolo" class="form-check-label">
+                            Not looking for a relationship
+                        </label>
+                    </div>
+
+                    <!-- Favorite Fruits Checkboxes -->
+
+                    <!-- Submit Button -->
                 </form>
             </div>
         </div>
