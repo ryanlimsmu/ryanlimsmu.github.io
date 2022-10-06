@@ -121,7 +121,7 @@
 
         <!-- Form -->
         <div class="container my-5 rounded-3 content-box" id="form">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+            <div class="row p-4 pt-lg-5 align-items-center rounded-3 border shadow-lg text-center">
                 <form action="">
                     <!-- Form Header Text -->
                     <h3>It's Your Turn. What's Up?</h3>
@@ -135,8 +135,9 @@
 
                     <!-- Email Input Box -->
                     <div class="form-floating mb-1">
-                        <input type="email" class="form-control" id="Email" placeholder="name@example.com" />
+                        <input type="email" class="form-control" id="Email" placeholder="name@example.com" aria-describedby="emailHelp" />
                         <label for="Email">Email Address</label>
+                        <div id="emailHelp" class="form-text">Your email will be kept private... because this form doesn't link to anywhere.</div>
                     </div>
                 </form>
             </div>
